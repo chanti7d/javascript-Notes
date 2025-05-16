@@ -1,34 +1,16 @@
-// let x=90;
-// let y=20;
-// console.log(x+y);
+const person = {
+  name: "",
+  setName(n) {
+    this.name = n;
+    return this;  // return the object
+  },
+  sayHi() {
+    console.log("Hi, I'm " + this.name);
+    return this;
+  }
+};
 
+// Use method chaining:
+person.setName("Ali").sayHi();
 
-// let firstname = "chanti"
-
-// let age = 24;
-
-// let userExists = true
-
-// console.log(typeof userExists)
-// console.log(typeof firstname)
-
-
-// console.log("My name is " + firstname, "and my age is " , age)
-
-// console.log(`My last name is ${firstname} and my age is ${age}`)
-
-// console.log(5 === "5")
-// console.log(1 === true)
-// console.log(null === undefined);
-
-
-
-//=====================Ternary operator ===========//
-
-kudihohuuasiho
-
-
-
-
-
-
+  
